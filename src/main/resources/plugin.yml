@@ -1,0 +1,25 @@
+name: MagicMayhem
+version: '${project.version}'
+main: me.lownzy.magicmayhem.MagicMayhem
+api-version: 1.19
+
+commands:
+  allStaffs:
+    description: Gives the user all darkStaffs.
+    usage: /<command>
+
+  darkStaffT1:
+    description: Gives the user a Tier 1 darkStaff.
+    usage: /<command>
+
+  darkStaffT2:
+    description: Gives the user a Tier 2 darkStaff.
+    usage: /<command>
+
+  testStaff:
+    description: Gives user test item.
+    usage: /<command>
+
+  givesword:
+    description: Gives a Sword to the player.
+    usage: /<command>

@@ -1,6 +1,5 @@
 package me.lownzy.magicmayhem.commands;
 
-import me.lownzy.magicmayhem.items.ItemManagerTestingItems;
 import me.lownzy.magicmayhem.items.ItemManagerWeapons;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -31,11 +30,6 @@ public class ItemCreator implements CommandExecutor {
         if (command.getName().equalsIgnoreCase("darkStaffT2")) {
             player.getInventory().addItem(ItemManagerWeapons.darkStaffT2);
         }
-
-        if (command.getName().equalsIgnoreCase("testStaff")) {
-            player.getInventory().addItem(ItemManagerTestingItems.testStaff);
-        }
-
 
         //swords
         if (command.getName().equalsIgnoreCase("givesword")) {

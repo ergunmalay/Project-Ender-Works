@@ -2,6 +2,7 @@ package me.lownzy.magicmayhem;
 
 import me.lownzy.magicmayhem.commands.ItemCreator;
 import me.lownzy.magicmayhem.events.AttackEvent;
+import me.lownzy.magicmayhem.events.ComboEvent;
 import me.lownzy.magicmayhem.events.darkStaffT1ShootEvent;
 import me.lownzy.magicmayhem.events.darkStaffT2ShootEvent;
 import me.lownzy.magicmayhem.items.ItemManagerWeapons;
@@ -29,7 +30,11 @@ public final class MagicMayhem extends JavaPlugin {
         //Events
         getServer().getPluginManager().registerEvents(new darkStaffT1ShootEvent(), this);
         getServer().getPluginManager().registerEvents(new darkStaffT2ShootEvent(), this);
+        getServer().getPluginManager().registerEvents(new ComboEvent(), this);
+
+
         getServer().getPluginManager().registerEvents(new AttackEvent(this), this);
+
     }
 
     @Override

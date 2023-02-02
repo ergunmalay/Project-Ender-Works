@@ -19,6 +19,11 @@ public class darkStaffT2ShootEvent implements Listener {
         if (!(Objects.requireNonNull(event.getItem()).isSimilar(ItemManagerWeapons.darkStaffT2))) {
             return;
         }
+
+        if (event.getAction().name().contains("RIGHT")) {
+            return;
+        }
+
         double blocksToShoot = 10;
         int damage = 5;
         double range = 1.5;
